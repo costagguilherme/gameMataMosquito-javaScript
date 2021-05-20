@@ -1,0 +1,55 @@
+html {
+    cursor: url(../imagens/mata_mosca.png) 30 30, auto; 
+}
+body {
+    background: url(../imagens/fundo.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+
+/*Tamanhos para o mosquito*/
+.mosquito0 {
+    height: 50px;
+}
+
+.mosquito1 {
+    height: 70px;
+}
+
+.mosquito2 {
+    height: 100px;
+}
+
+/*Para onda o mosquito irá "olhar"*/
+.paraDireita {
+    transform: scaleX(1)
+}
+
+.paraEsquerda {
+    transform: scaleX(-1)
+}
+
+/*Formatação das divs*/
+
+.painel {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    bottom: 0px;
+    border: solid 3px black;
+    background: #fff;
+    left: 0px;
+    opacity: 0.7;
+}
+
+.life {
+    float: left;
+
+}
+
+.div_tempo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}

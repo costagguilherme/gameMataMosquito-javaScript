@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Mosquito Killer</title>
+
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+
+    <!--JavaScript-->
+    <script src="game_script.js"></script>
+</head>
+
+<body onresize="ajustaTela()">
+    
+
+    <div class="painel">
+        <div class="life">
+            <img id="coracao1" src="../imagens/coracao_cheio.png" alt="">
+            <img id="coracao2" src="../imagens/coracao_cheio.png" alt="">
+            <img id="coracao3" src="../imagens/coracao_cheio.png" alt="">
+        </div>
+
+        <div class="div_tempo">
+            Tempo restante: <span id="tempo_total"></span>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('tempo_total').innerHTML = tempo_restante
+        var criaMosquito = setInterval(function() {posicaoRandomica()}, tempoDificuldade )
+    </script>
+
+
+</body>
+</html>
